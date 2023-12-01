@@ -64,7 +64,7 @@ function saveTodoListToLocalStorage() {
       return;
     }
   
-    const newTaskObject = {
+    let newTaskObject = {
       id: Date.now(),
       name: newTaskName,
       createdDate: new Date().toISOString(),
